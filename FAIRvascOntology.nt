@@ -1,0 +1,590 @@
+<http://ontologies.adaptcentre.ie/fairvasc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://ontologies.adaptcentre.ie/fairvasc> <http://www.w3.org/2002/07/owl#versionIRI> <http://ontologies.adaptcentre.ie/fairvasc> .
+<http://ontologies.adaptcentre.ie/fairvasc> <http://www.w3.org/2002/07/owl#imports> <http://ontologies.adaptcentre.ie/bvas> .
+<http://ontologies.adaptcentre.ie/fairvasc> <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by/4.0/> .
+<http://ontologies.adaptcentre.ie/fairvasc> <http://purl.org/dc/elements/1.1/creator> "ADAPT" .
+<http://ontologies.adaptcentre.ie/fairvasc> <http://purl.org/dc/elements/1.1/date> "2021-05-06" .
+<http://ontologies.adaptcentre.ie/fairvasc> <http://purl.org/dc/elements/1.1/publisher> <http://www.adapt-centre.ie/> .
+<http://ontologies.adaptcentre.ie/fairvasc> <http://purl.org/dc/elements/1.1/rights> "The FAIRVASC Ontology is available under the CC 4.0 BY License; see http://creativecommons.org/licenses/by/4.0/. This license lets others distribute, remix, tweak, and build upon your work, even commercially, as long as they credit you for the original creation. For proper attribution, simply include the statement: \"This work is based on the analysis of Rare Kidney Disease Registries in seven European countries; Ireland, Sweden, Germany, Czechoslovakia, Poland, UK and France and has been developed in collaboration with the ADAPT Centre, Trinity College Dublin."@en .
+<http://ontologies.adaptcentre.ie/fairvasc> <http://purl.org/dc/elements/1.1/title> "The FAIRVASC Ontology"@en .
+<http://ontologies.adaptcentre.ie/fairvasc> <http://www.w3.org/2000/01/rdf-schema#comment> "The labels for concepts introduced for this ontology are still pending approval." .
+<http://ontologies.adaptcentre.ie/fairvasc> <http://www.w3.org/2002/07/owl#versionInfo> "2.00.000" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://creativecommons.org/ns#license
+<http://creativecommons.org/ns#license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/date
+<http://purl.org/dc/elements/1.1/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#gYear
+<http://www.w3.org/2001/XMLSchema#gYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#hasAnca
+<http://ontologies.adaptcentre.ie/fairvasc#hasAnca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasAnca> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#PatientOverview> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasAnca> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontologies.adaptcentre.ie/fairvasc#ANCA> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasAnca> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a patient overview/summary to their overall ANCA results." .
+<http://ontologies.adaptcentre.ie/fairvasc#hasAnca> <http://www.w3.org/2000/01/rdf-schema#label> "has Anti-neutrophil cytoplasm antibodies (ANCA)"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#hasAnca> <http://www.w3.org/2000/01/rdf-schema#label> "has Anti-neutrophil cytoplasm antibodies (ANCA)" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#hasBVAS
+<http://ontologies.adaptcentre.ie/fairvasc#hasBVAS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasBVAS> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#Encounter> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasBVAS> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontologies.adaptcentre.ie/bvas#BVAS> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasBVAS> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an encounter to a birmingham vasculitis score"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#hasBVAS> <http://www.w3.org/2000/01/rdf-schema#label> "has Birmingham Vasculitis Activity Score (BVAS)"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#hasBVAS> <http://www.w3.org/2000/01/rdf-schema#label> "has Birmingham Vasculitis Activity Score (BVAS)" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#hasClinicalOutcome
+<http://ontologies.adaptcentre.ie/fairvasc#hasClinicalOutcome> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasClinicalOutcome> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#Patient> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasClinicalOutcome> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontologies.adaptcentre.ie/fairvasc#ClinicalOutcomes> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasClinicalOutcome> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a patient to the clinical outcome of their disease." .
+<http://ontologies.adaptcentre.ie/fairvasc#hasClinicalOutcome> <http://www.w3.org/2000/01/rdf-schema#label> "has Clinical Outcome"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#hasClinicalOutcome> <http://www.w3.org/2000/01/rdf-schema#label> "has Clinical Outcome" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#hasClinicalTest
+<http://ontologies.adaptcentre.ie/fairvasc#hasClinicalTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasClinicalTest> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#Encounter> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasClinicalTest> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontologies.adaptcentre.ie/fairvasc#ClinicalTest> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasClinicalTest> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates an encounter to a clinical test." .
+<http://ontologies.adaptcentre.ie/fairvasc#hasClinicalTest> <http://www.w3.org/2000/01/rdf-schema#label> "has Clinical Test"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#hasClinicalTest> <http://www.w3.org/2000/01/rdf-schema#label> "has Clinical Test" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#hasComorbidities
+<http://ontologies.adaptcentre.ie/fairvasc#hasComorbidities> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasComorbidities> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#PatientOverview> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasComorbidities> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontologies.adaptcentre.ie/fairvasc#Comorbidities> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasComorbidities> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a patient overview to their comorbidities." .
+<http://ontologies.adaptcentre.ie/fairvasc#hasComorbidities> <http://www.w3.org/2000/01/rdf-schema#label> "has Comorbidities"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#hasComorbidities> <http://www.w3.org/2000/01/rdf-schema#label> "has Comorbidities" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#hasComplication
+<http://ontologies.adaptcentre.ie/fairvasc#hasComplication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasComplication> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#ClinicalOutcomes> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasComplication> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#Encounter> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasComplication> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontologies.adaptcentre.ie/fairvasc#Complication> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasComplication> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a patients outcomes to complications." .
+<http://ontologies.adaptcentre.ie/fairvasc#hasComplication> <http://www.w3.org/2000/01/rdf-schema#label> "has Complication"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#hasComplication> <http://www.w3.org/2000/01/rdf-schema#label> "has Complication" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#hasDiagnosis
+<http://ontologies.adaptcentre.ie/fairvasc#hasDiagnosis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasDiagnosis> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#PatientOverview> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasDiagnosis> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontologies.adaptcentre.ie/fairvasc#Diagnosis> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasDiagnosis> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a patient overview/summary to their overall diagnosis." .
+<http://ontologies.adaptcentre.ie/fairvasc#hasDiagnosis> <http://www.w3.org/2000/01/rdf-schema#label> "has Diagnosis"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#hasDiagnosis> <http://www.w3.org/2000/01/rdf-schema#label> "has Diagnosis" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#hasEncounter
+<http://ontologies.adaptcentre.ie/fairvasc#hasEncounter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasEncounter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#Patient> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasEncounter> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontologies.adaptcentre.ie/fairvasc#Encounter> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasEncounter> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a patient to an encounter related to their vasculitis." .
+<http://ontologies.adaptcentre.ie/fairvasc#hasEncounter> <http://www.w3.org/2000/01/rdf-schema#label> "has Encounter"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#hasEncounter> <http://www.w3.org/2000/01/rdf-schema#label> "has Encounter" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#hasOrganPattern
+<http://ontologies.adaptcentre.ie/fairvasc#hasOrganPattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasOrganPattern> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#PatientOverview> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasOrganPattern> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontologies.adaptcentre.ie/fairvasc#OrganPattern> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasOrganPattern> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a patients overivew/summary to their overall organ pattern organ pattern." .
+<http://ontologies.adaptcentre.ie/fairvasc#hasOrganPattern> <http://www.w3.org/2000/01/rdf-schema#label> "has Organ Pattern"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#hasOrganPattern> <http://www.w3.org/2000/01/rdf-schema#label> "has Organ Pattern" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#hasPatientOverview
+<http://ontologies.adaptcentre.ie/fairvasc#hasPatientOverview> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasPatientOverview> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#Patient> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasPatientOverview> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontologies.adaptcentre.ie/fairvasc#PatientOverview> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasPatientOverview> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a Patient to their Patient Overview/Summary" .
+<http://ontologies.adaptcentre.ie/fairvasc#hasPatientOverview> <http://www.w3.org/2000/01/rdf-schema#label> "has Patient Overview"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#hasPatientOverview> <http://www.w3.org/2000/01/rdf-schema#label> "has Patient Overview" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#hasTreatment
+<http://ontologies.adaptcentre.ie/fairvasc#hasTreatment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasTreatment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#PatientOverview> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasTreatment> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontologies.adaptcentre.ie/fairvasc#Treatment> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasTreatment> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a patients overview to a treatments" .
+<http://ontologies.adaptcentre.ie/fairvasc#hasTreatment> <http://www.w3.org/2000/01/rdf-schema#label> "has received treatments"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#hasTreatment> <http://www.w3.org/2000/01/rdf-schema#label> "has received treatments" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#hasTreatmentInduction
+<http://ontologies.adaptcentre.ie/fairvasc#hasTreatmentInduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasTreatmentInduction> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://ontologies.adaptcentre.ie/fairvasc#hasTreatment> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasTreatmentInduction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#PatientOverview> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasTreatmentInduction> <http://www.w3.org/2000/01/rdf-schema#range> <http://ontologies.adaptcentre.ie/fairvasc#TreatmentInduction> .
+<http://ontologies.adaptcentre.ie/fairvasc#hasTreatmentInduction> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a patients overview to their induction treatments" .
+<http://ontologies.adaptcentre.ie/fairvasc#hasTreatmentInduction> <http://www.w3.org/2000/01/rdf-schema#label> "has received induction treatments"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#hasTreatmentInduction> <http://www.w3.org/2000/01/rdf-schema#label> "has received induction treatments" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#BMI
+<http://ontologies.adaptcentre.ie/fairvasc#BMI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#BMI> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#PatientOverview> .
+<http://ontologies.adaptcentre.ie/fairvasc#BMI> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://ontologies.adaptcentre.ie/fairvasc#BMI> <http://www.w3.org/2000/01/rdf-schema#comment> "body mass index" .
+<http://ontologies.adaptcentre.ie/fairvasc#BMI> <http://www.w3.org/2000/01/rdf-schema#label> "body mass index"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#BMI> <http://www.w3.org/2000/01/rdf-schema#label> "body mass index" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#ESKDApproximation
+<http://ontologies.adaptcentre.ie/fairvasc#ESKDApproximation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#ESKDApproximation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#ClinicalOutcomes> .
+<http://ontologies.adaptcentre.ie/fairvasc#ESKDApproximation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://ontologies.adaptcentre.ie/fairvasc#ESKDApproximation> <http://www.w3.org/2000/01/rdf-schema#comment> "An approximate defition for ESKD defined by the registry" .
+<http://ontologies.adaptcentre.ie/fairvasc#ESKDApproximation> <http://www.w3.org/2000/01/rdf-schema#label> "approximated end stage kidney disease"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#ESKDApproximation> <http://www.w3.org/2000/01/rdf-schema#label> "approximated end stage kidney disease" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#ESKDDialysis
+<http://ontologies.adaptcentre.ie/fairvasc#ESKDDialysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#ESKDDialysis> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#ClinicalOutcomes> .
+<http://ontologies.adaptcentre.ie/fairvasc#ESKDDialysis> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://ontologies.adaptcentre.ie/fairvasc#ESKDDialysis> <http://www.w3.org/2000/01/rdf-schema#comment> "Dialysis indicating end stage kidney disease occured" .
+<http://ontologies.adaptcentre.ie/fairvasc#ESKDDialysis> <http://www.w3.org/2000/01/rdf-schema#label> "dialysis indicating end stage kidney disease"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#ESKDDialysis> <http://www.w3.org/2000/01/rdf-schema#label> "dialysis indicating end stage kidney disease" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#ESKDStandard
+<http://ontologies.adaptcentre.ie/fairvasc#ESKDStandard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#ESKDStandard> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#ClinicalOutcomes> .
+<http://ontologies.adaptcentre.ie/fairvasc#ESKDStandard> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://ontologies.adaptcentre.ie/fairvasc#ESKDStandard> <http://www.w3.org/2000/01/rdf-schema#comment> "The standard defintion for ESKD in FAIRVASC is defined as any of: \na) dialysis for >90 days; \nb) sustained CKD 5 (eGFR < 15 ml/min/1.73m2) for >90 days; and/or \nc) kidney transplantation" .
+<http://ontologies.adaptcentre.ie/fairvasc#ESKDStandard> <http://www.w3.org/2000/01/rdf-schema#label> "standard defintion of end stage kidney disease"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#ESKDStandard> <http://www.w3.org/2000/01/rdf-schema#label> "standard defintion of end stage kidney disease" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#affectedOrgan
+<http://ontologies.adaptcentre.ie/fairvasc#affectedOrgan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#affectedOrgan> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#OrganPattern> .
+<http://ontologies.adaptcentre.ie/fairvasc#affectedOrgan> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://ontologies.adaptcentre.ie/fairvasc#affectedOrgan> <http://www.w3.org/2000/01/rdf-schema#comment> "a string value which represents the organ affected" .
+<http://ontologies.adaptcentre.ie/fairvasc#affectedOrgan> <http://www.w3.org/2000/01/rdf-schema#label> "organ affected"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#affectedOrgan> <http://www.w3.org/2000/01/rdf-schema#label> "organ affected" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#ancaIF
+<http://ontologies.adaptcentre.ie/fairvasc#ancaIF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#ancaIF> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#ANCA> .
+<http://ontologies.adaptcentre.ie/fairvasc#ancaIF> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ontologies.adaptcentre.ie/fairvasc#ancaIF> <http://www.w3.org/2000/01/rdf-schema#comment> "Value for ANCA Immunofluorescence (IF). Possible values are: <cANCA positive, pANCA positive, Atypical, Negative, Not tested>" .
+<http://ontologies.adaptcentre.ie/fairvasc#ancaIF> <http://www.w3.org/2000/01/rdf-schema#label> "has ANCA Immunofluorescence (IF) result"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#ancaIF> <http://www.w3.org/2000/01/rdf-schema#label> "has ANCA Immunofluorescence (IF) result" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#ancaSpec
+<http://ontologies.adaptcentre.ie/fairvasc#ancaSpec> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#ancaSpec> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#ANCA> .
+<http://ontologies.adaptcentre.ie/fairvasc#ancaSpec> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ontologies.adaptcentre.ie/fairvasc#ancaSpec> <http://www.w3.org/2000/01/rdf-schema#comment> "The ELISA (enzyme-linked immunosorbent assay) is a widely used application for detecting and quantifying proteins and antigens from various samples. Possible values include: <MPO positive, ELISA negative, PR3 positive, other, No Elisa performed, MPO and PR3 positive>" .
+<http://ontologies.adaptcentre.ie/fairvasc#ancaSpec> <http://www.w3.org/2000/01/rdf-schema#label> "has ANCA Specificity (ELISA) results"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#ancaSpec> <http://www.w3.org/2000/01/rdf-schema#label> "has ANCA Specificity (ELISA) results" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#causeOfDeath
+<http://ontologies.adaptcentre.ie/fairvasc#causeOfDeath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#causeOfDeath> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#ClinicalOutcomes> .
+<http://ontologies.adaptcentre.ie/fairvasc#causeOfDeath> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ontologies.adaptcentre.ie/fairvasc#causeOfDeath> <http://www.w3.org/2000/01/rdf-schema#comment> "the main cause of a patients death" .
+<http://ontologies.adaptcentre.ie/fairvasc#causeOfDeath> <http://www.w3.org/2000/01/rdf-schema#label> "cause of death"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#causeOfDeath> <http://www.w3.org/2000/01/rdf-schema#label> "cause of death" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#comorbidity
+<http://ontologies.adaptcentre.ie/fairvasc#comorbidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#comorbidity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#PatientOverview> .
+<http://ontologies.adaptcentre.ie/fairvasc#comorbidity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#complicationSeverity
+<http://ontologies.adaptcentre.ie/fairvasc#complicationSeverity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#complicationSeverity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#Complication> .
+<http://ontologies.adaptcentre.ie/fairvasc#complicationSeverity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://ontologies.adaptcentre.ie/fairvasc#complicationSeverity> <http://www.w3.org/2000/01/rdf-schema#comment> "the severity of a complication" .
+<http://ontologies.adaptcentre.ie/fairvasc#complicationSeverity> <http://www.w3.org/2000/01/rdf-schema#label> "complication severity"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#complicationSeverity> <http://www.w3.org/2000/01/rdf-schema#label> "complication severity" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#complicationType
+<http://ontologies.adaptcentre.ie/fairvasc#complicationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#complicationType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#Complication> .
+<http://ontologies.adaptcentre.ie/fairvasc#complicationType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://ontologies.adaptcentre.ie/fairvasc#complicationType> <http://www.w3.org/2000/01/rdf-schema#comment> "the type of complication" .
+<http://ontologies.adaptcentre.ie/fairvasc#complicationType> <http://www.w3.org/2000/01/rdf-schema#label> "type of complication"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#complicationType> <http://www.w3.org/2000/01/rdf-schema#label> "type of complication" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#dateOfComplications
+<http://ontologies.adaptcentre.ie/fairvasc#dateOfComplications> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#dateOfComplications> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#Complication> .
+<http://ontologies.adaptcentre.ie/fairvasc#dateOfComplications> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://ontologies.adaptcentre.ie/fairvasc#dateOfComplications> <http://www.w3.org/2000/01/rdf-schema#comment> "the date when complications took place" .
+<http://ontologies.adaptcentre.ie/fairvasc#dateOfComplications> <http://www.w3.org/2000/01/rdf-schema#label> "date of complications"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#dateOfComplications> <http://www.w3.org/2000/01/rdf-schema#label> "date of complications" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#dateOfDeath
+<http://ontologies.adaptcentre.ie/fairvasc#dateOfDeath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://ontologies.adaptcentre.ie/fairvasc#dateOfDeath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#dateOfDeath> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#ClinicalOutcomes> .
+<http://ontologies.adaptcentre.ie/fairvasc#dateOfDeath> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://ontologies.adaptcentre.ie/fairvasc#dateOfDeath> <http://www.w3.org/2000/01/rdf-schema#comment> "the date a patient died" .
+<http://ontologies.adaptcentre.ie/fairvasc#dateOfDeath> <http://www.w3.org/2000/01/rdf-schema#label> "date of death"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#dateOfDeath> <http://www.w3.org/2000/01/rdf-schema#label> "date of death" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#dateOfDiagnosis
+<http://ontologies.adaptcentre.ie/fairvasc#dateOfDiagnosis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#dateOfDiagnosis> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#Diagnosis> .
+<http://ontologies.adaptcentre.ie/fairvasc#dateOfDiagnosis> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://ontologies.adaptcentre.ie/fairvasc#dateOfDiagnosis> <http://www.w3.org/2000/01/rdf-schema#comment> "the date this patients diagnosis took place" .
+<http://ontologies.adaptcentre.ie/fairvasc#dateOfDiagnosis> <http://www.w3.org/2000/01/rdf-schema#label> "date of diagnosis"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#dateOfDiagnosis> <http://www.w3.org/2000/01/rdf-schema#label> "date of diagnosis" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#dateOfESKD
+<http://ontologies.adaptcentre.ie/fairvasc#dateOfESKD> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#dateOfESKD> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#ClinicalOutcomes> .
+<http://ontologies.adaptcentre.ie/fairvasc#dateOfESKD> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://ontologies.adaptcentre.ie/fairvasc#dateOfESKD> <http://www.w3.org/2000/01/rdf-schema#comment> "date when end stage kidney disease took place" .
+<http://ontologies.adaptcentre.ie/fairvasc#dateOfESKD> <http://www.w3.org/2000/01/rdf-schema#label> "date of end stage kidney disease"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#dateOfESKD> <http://www.w3.org/2000/01/rdf-schema#label> "date of end stage kidney disease" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#dateOfEncounter
+<http://ontologies.adaptcentre.ie/fairvasc#dateOfEncounter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#dateOfEncounter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#Encounter> .
+<http://ontologies.adaptcentre.ie/fairvasc#dateOfEncounter> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://ontologies.adaptcentre.ie/fairvasc#dateOfEncounter> <http://www.w3.org/2000/01/rdf-schema#comment> "the date when an encounter took place" .
+<http://ontologies.adaptcentre.ie/fairvasc#dateOfEncounter> <http://www.w3.org/2000/01/rdf-schema#label> "date of encounter"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#dateOfEncounter> <http://www.w3.org/2000/01/rdf-schema#label> "date of encounter" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#death
+<http://ontologies.adaptcentre.ie/fairvasc#death> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#death> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#ClinicalOutcomes> .
+<http://ontologies.adaptcentre.ie/fairvasc#death> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://ontologies.adaptcentre.ie/fairvasc#death> <http://www.w3.org/2000/01/rdf-schema#comment> "Did death occur?" .
+<http://ontologies.adaptcentre.ie/fairvasc#death> <http://www.w3.org/2000/01/rdf-schema#label> "death"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#death> <http://www.w3.org/2000/01/rdf-schema#label> "death" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#gender
+<http://ontologies.adaptcentre.ie/fairvasc#gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#gender> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#Patient> .
+<http://ontologies.adaptcentre.ie/fairvasc#gender> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ontologies.adaptcentre.ie/fairvasc#gender> <http://www.w3.org/2000/01/rdf-schema#comment> "The gender of the patient. Possble values are <Male, Female, other>" .
+<http://ontologies.adaptcentre.ie/fairvasc#gender> <http://www.w3.org/2000/01/rdf-schema#label> "gender"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#gender> <http://www.w3.org/2000/01/rdf-schema#label> "gender" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#genericTerm
+<http://ontologies.adaptcentre.ie/fairvasc#genericTerm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#genericTerm> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#Complication> .
+<http://ontologies.adaptcentre.ie/fairvasc#genericTerm> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#OrganPattern> .
+<http://ontologies.adaptcentre.ie/fairvasc#genericTerm> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://ontologies.adaptcentre.ie/fairvasc#genericTerm> <http://www.w3.org/2000/01/rdf-schema#comment> "this indicates whether the term returned is a generic term, or a more specific term" .
+<http://ontologies.adaptcentre.ie/fairvasc#genericTerm> <http://www.w3.org/2000/01/rdf-schema#label> "is generic"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#genericTerm> <http://www.w3.org/2000/01/rdf-schema#label> "is generic" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#height
+<http://ontologies.adaptcentre.ie/fairvasc#height> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#height> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#PatientOverview> .
+<http://ontologies.adaptcentre.ie/fairvasc#height> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://ontologies.adaptcentre.ie/fairvasc#height> <http://www.w3.org/2000/01/rdf-schema#comment> "patients height at diagnosis"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#height> <http://www.w3.org/2000/01/rdf-schema#label> "height"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#height> <http://www.w3.org/2000/01/rdf-schema#label> "height" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#lastRecordedContact
+<http://ontologies.adaptcentre.ie/fairvasc#lastRecordedContact> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#lastRecordedContact> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#ClinicalOutcomes> .
+<http://ontologies.adaptcentre.ie/fairvasc#lastRecordedContact> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://ontologies.adaptcentre.ie/fairvasc#lastRecordedContact> <http://www.w3.org/2000/01/rdf-schema#comment> "the date of the last recorded contact of the patient with the registry" .
+<http://ontologies.adaptcentre.ie/fairvasc#lastRecordedContact> <http://www.w3.org/2000/01/rdf-schema#label> "last recorded contact"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#lastRecordedContact> <http://www.w3.org/2000/01/rdf-schema#label> "last recorded contact" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#mainDiagnosis
+<http://ontologies.adaptcentre.ie/fairvasc#mainDiagnosis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#mainDiagnosis> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#Diagnosis> .
+<http://ontologies.adaptcentre.ie/fairvasc#mainDiagnosis> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://ontologies.adaptcentre.ie/fairvasc#mainDiagnosis> <http://www.w3.org/2000/01/rdf-schema#comment> "The main diagnosis for the patient" .
+<http://ontologies.adaptcentre.ie/fairvasc#mainDiagnosis> <http://www.w3.org/2000/01/rdf-schema#label> "main diagnosis"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#mainDiagnosis> <http://www.w3.org/2000/01/rdf-schema#label> "main diagnosis" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#mpoTitre
+<http://ontologies.adaptcentre.ie/fairvasc#mpoTitre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#mpoTitre> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#ClinicalTest> .
+<http://ontologies.adaptcentre.ie/fairvasc#mpoTitre> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ontologies.adaptcentre.ie/fairvasc#mpoTitre> <http://www.w3.org/2000/01/rdf-schema#comment> "mpo Titre has a value of either negative, not available, or high low positive. The threshold for Low / High positive is derived based on a local analysis, using geometric mean as a cut off." .
+<http://ontologies.adaptcentre.ie/fairvasc#mpoTitre> <http://www.w3.org/2000/01/rdf-schema#label> "MPO Titre"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#mpoTitre> <http://www.w3.org/2000/01/rdf-schema#label> "MPO Titre" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#mpoTitreDefault
+<http://ontologies.adaptcentre.ie/fairvasc#mpoTitreDefault> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#mpoTitreDefault> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#ClinicalTest> .
+<http://ontologies.adaptcentre.ie/fairvasc#mpoTitreDefault> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ontologies.adaptcentre.ie/fairvasc#mpoTitreDefault> <http://www.w3.org/2000/01/rdf-schema#comment> "MPO Titre default give either a negative, positive or not available value" .
+<http://ontologies.adaptcentre.ie/fairvasc#mpoTitreDefault> <http://www.w3.org/2000/01/rdf-schema#label> "MPO Titre Default"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#mpoTitreDefault> <http://www.w3.org/2000/01/rdf-schema#label> "MPO Titre Default" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#organDiseasePatternLung
+<http://ontologies.adaptcentre.ie/fairvasc#organDiseasePatternLung> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#organDiseasePatternLung> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#OrganPattern> .
+<http://ontologies.adaptcentre.ie/fairvasc#organDiseasePatternLung> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://ontologies.adaptcentre.ie/fairvasc#organDiseasePatternLung> <http://www.w3.org/2000/01/rdf-schema#comment> "a string value which represents a disease pattern for lungs" .
+<http://ontologies.adaptcentre.ie/fairvasc#organDiseasePatternLung> <http://www.w3.org/2000/01/rdf-schema#label> "organ disease pattern lungs"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#organDiseasePatternLung> <http://www.w3.org/2000/01/rdf-schema#label> "organ disease pattern lungs" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#patientID
+<http://ontologies.adaptcentre.ie/fairvasc#patientID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#patientID> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#Patient> .
+<http://ontologies.adaptcentre.ie/fairvasc#patientID> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ontologies.adaptcentre.ie/fairvasc#patientID> <http://www.w3.org/2000/01/rdf-schema#comment> "an identifier for a patient, generally taken from the identifier in the associated registry" .
+<http://ontologies.adaptcentre.ie/fairvasc#patientID> <http://www.w3.org/2000/01/rdf-schema#label> "patient identifier"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#patientID> <http://www.w3.org/2000/01/rdf-schema#label> "patient identifier" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#pr3Titre
+<http://ontologies.adaptcentre.ie/fairvasc#pr3Titre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#pr3Titre> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#ClinicalTest> .
+<http://ontologies.adaptcentre.ie/fairvasc#pr3Titre> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ontologies.adaptcentre.ie/fairvasc#pr3Titre> <http://www.w3.org/2000/01/rdf-schema#comment> "PR3 Titre has a value of either negative, not available, or high low positive. The threshold for Low / High positive is derived based on a local analysis, using geometric mean as a cut off." .
+<http://ontologies.adaptcentre.ie/fairvasc#pr3Titre> <http://www.w3.org/2000/01/rdf-schema#label> "PR3 Titre"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#pr3Titre> <http://www.w3.org/2000/01/rdf-schema#label> "PR3 Titre" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#pr3TitreDefault
+<http://ontologies.adaptcentre.ie/fairvasc#pr3TitreDefault> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#pr3TitreDefault> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#ClinicalTest> .
+<http://ontologies.adaptcentre.ie/fairvasc#pr3TitreDefault> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ontologies.adaptcentre.ie/fairvasc#pr3TitreDefault> <http://www.w3.org/2000/01/rdf-schema#comment> "PR3 Titre default give either a negative, positive or not available value" .
+<http://ontologies.adaptcentre.ie/fairvasc#pr3TitreDefault> <http://www.w3.org/2000/01/rdf-schema#label> "PR3 Titre Default"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#pr3TitreDefault> <http://www.w3.org/2000/01/rdf-schema#label> "PR3 Titre Default" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#severe
+<http://ontologies.adaptcentre.ie/fairvasc#severe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#severe> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#Complication> .
+<http://ontologies.adaptcentre.ie/fairvasc#severe> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://ontologies.adaptcentre.ie/fairvasc#severe> <http://www.w3.org/2000/01/rdf-schema#comment> "was a complication severe" .
+<http://ontologies.adaptcentre.ie/fairvasc#severe> <http://www.w3.org/2000/01/rdf-schema#label> "severe"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#severe> <http://www.w3.org/2000/01/rdf-schema#label> "severe" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#testDate
+<http://ontologies.adaptcentre.ie/fairvasc#testDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#testDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#ClinicalTest> .
+<http://ontologies.adaptcentre.ie/fairvasc#testDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://ontologies.adaptcentre.ie/fairvasc#testDate> <http://www.w3.org/2000/01/rdf-schema#comment> "the date a clinical test took place (which could be after a specific patient encounter)" .
+<http://ontologies.adaptcentre.ie/fairvasc#testDate> <http://www.w3.org/2000/01/rdf-schema#label> "date test took place"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#testDate> <http://www.w3.org/2000/01/rdf-schema#label> "date test took place" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#testType
+<http://ontologies.adaptcentre.ie/fairvasc#testType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#testType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#ClinicalTest> .
+<http://ontologies.adaptcentre.ie/fairvasc#testType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ontologies.adaptcentre.ie/fairvasc#testType> <http://www.w3.org/2000/01/rdf-schema#comment> "the type of test" .
+<http://ontologies.adaptcentre.ie/fairvasc#testType> <http://www.w3.org/2000/01/rdf-schema#label> "type of test"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#testType> <http://www.w3.org/2000/01/rdf-schema#label> "type of test" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#testUnit
+<http://ontologies.adaptcentre.ie/fairvasc#testUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#testUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#ClinicalTest> .
+<http://ontologies.adaptcentre.ie/fairvasc#testUnit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://ontologies.adaptcentre.ie/fairvasc#testUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "the unit used in a test" .
+<http://ontologies.adaptcentre.ie/fairvasc#testUnit> <http://www.w3.org/2000/01/rdf-schema#label> "unit of test"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#testUnit> <http://www.w3.org/2000/01/rdf-schema#label> "unit of test" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#testValue
+<http://ontologies.adaptcentre.ie/fairvasc#testValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#testValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#ClinicalTest> .
+<http://ontologies.adaptcentre.ie/fairvasc#testValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://ontologies.adaptcentre.ie/fairvasc#testValue> <http://www.w3.org/2000/01/rdf-schema#comment> "the value of a test" .
+<http://ontologies.adaptcentre.ie/fairvasc#testValue> <http://www.w3.org/2000/01/rdf-schema#label> "value of test"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#testValue> <http://www.w3.org/2000/01/rdf-schema#label> "value of test" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#treatmentType
+<http://ontologies.adaptcentre.ie/fairvasc#treatmentType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#treatmentType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#Treatment> .
+<http://ontologies.adaptcentre.ie/fairvasc#treatmentType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://ontologies.adaptcentre.ie/fairvasc#treatmentType> <http://www.w3.org/2000/01/rdf-schema#comment> "relates a patients overview with a specific type of treatment" .
+<http://ontologies.adaptcentre.ie/fairvasc#treatmentType> <http://www.w3.org/2000/01/rdf-schema#label> "treatment type"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#treatmentType> <http://www.w3.org/2000/01/rdf-schema#label> "treatment type" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#weight
+<http://ontologies.adaptcentre.ie/fairvasc#weight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#weight> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#PatientOverview> .
+<http://ontologies.adaptcentre.ie/fairvasc#weight> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://ontologies.adaptcentre.ie/fairvasc#weight> <http://www.w3.org/2000/01/rdf-schema#comment> "patients weight at diagnosis" .
+<http://ontologies.adaptcentre.ie/fairvasc#weight> <http://www.w3.org/2000/01/rdf-schema#label> "weight"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#weight> <http://www.w3.org/2000/01/rdf-schema#label> "weight" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#yearOfBirth
+<http://ontologies.adaptcentre.ie/fairvasc#yearOfBirth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ontologies.adaptcentre.ie/fairvasc#yearOfBirth> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#Patient> .
+<http://ontologies.adaptcentre.ie/fairvasc#yearOfBirth> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#gYear> .
+<http://ontologies.adaptcentre.ie/fairvasc#yearOfBirth> <http://www.w3.org/2000/01/rdf-schema#comment> "the year a patient was born" .
+<http://ontologies.adaptcentre.ie/fairvasc#yearOfBirth> <http://www.w3.org/2000/01/rdf-schema#label> "year of birth"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#yearOfBirth> <http://www.w3.org/2000/01/rdf-schema#label> "year of birth" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://ontologies.adaptcentre.ie/bvas#BVAS
+<http://ontologies.adaptcentre.ie/bvas#BVAS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#ANCA
+<http://ontologies.adaptcentre.ie/fairvasc#ANCA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologies.adaptcentre.ie/fairvasc#ANCA> <http://www.w3.org/2000/01/rdf-schema#comment> "These are autoantibodies that target a type of human white blood cell called neutrophils, which are important in health for fighting infection partly through the release of toxic substances that destroy bacteria. In ANCA-associated vasculitis, ANCA specifically bind to two proteins called proteinase 3 (PR3) and myeloperoxidase (MPO). Patients with ANCA-associated vasculitis usually have autoantibodies against PR3 (PR3-ANCA) or MPO (MPO-ANCA) but not both. ANCA also contributes to blood vessel damage." .
+<http://ontologies.adaptcentre.ie/fairvasc#ANCA> <http://www.w3.org/2000/01/rdf-schema#label> "Anti-neutrophil cytoplasm antibodies (ANCA)"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#ANCA> <http://www.w3.org/2000/01/rdf-schema#label> "Anti-neutrophil cytoplasm antibodies (ANCA)" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#ClinicalOutcomes
+<http://ontologies.adaptcentre.ie/fairvasc#ClinicalOutcomes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologies.adaptcentre.ie/fairvasc#ClinicalOutcomes> <http://www.w3.org/2000/01/rdf-schema#comment> "Clinical outcomes represent the class of measurable changes in health, function or quality of life that result from a treatment of care , for vasculitis.\n\nImportant outcomes are related to date recorded of end stage kidney disease, death (and cause) of death, and the last recorded contact of the patient with the registry.  \n\nClinical Outcomes are also related to complications" .
+<http://ontologies.adaptcentre.ie/fairvasc#ClinicalOutcomes> <http://www.w3.org/2000/01/rdf-schema#label> "Clinical Outcomes"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#ClinicalOutcomes> <http://www.w3.org/2000/01/rdf-schema#label> "Clinical Outcomes" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#ClinicalTest
+<http://ontologies.adaptcentre.ie/fairvasc#ClinicalTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologies.adaptcentre.ie/fairvasc#ClinicalTest> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents a test conducted at an encounter, for example, a blood test. A typical blood test in vasculitis would be to determine creatinine levels. Creatinine is a waste product produced by muscles and is excreted from the body by the kidneys. Blood levels of creatinine are used as a measure of kidney function."@en .
+<http://ontologies.adaptcentre.ie/fairvasc#ClinicalTest> <http://www.w3.org/2000/01/rdf-schema#label> "Clinical Test"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#ClinicalTest> <http://www.w3.org/2000/01/rdf-schema#label> "Clinical Test" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#Comorbidities
+<http://ontologies.adaptcentre.ie/fairvasc#Comorbidities> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologies.adaptcentre.ie/fairvasc#Comorbidities> <http://www.w3.org/2000/01/rdf-schema#comment> "This classes representesnt comorbidities a patient had when they enlisted as a patient to the registry." .
+<http://ontologies.adaptcentre.ie/fairvasc#Comorbidities> <http://www.w3.org/2000/01/rdf-schema#label> "Comorbidities" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#Complication
+<http://ontologies.adaptcentre.ie/fairvasc#Complication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologies.adaptcentre.ie/fairvasc#Complication> <http://www.w3.org/2000/01/rdf-schema#label> "Complication"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#Complication> <http://www.w3.org/2000/01/rdf-schema#label> "Complication" .
+<http://ontologies.adaptcentre.ie/fairvasc#Complication> <http://www.w3.org/2000/01/rdf-schema#label> "This class represents any complications that a patient of a vasculitis registry experienced due to vasculitis." .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#ComplicationCardiovascular
+<http://ontologies.adaptcentre.ie/fairvasc#ComplicationCardiovascular> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologies.adaptcentre.ie/fairvasc#ComplicationCardiovascular> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontologies.adaptcentre.ie/fairvasc#Complication> .
+<http://ontologies.adaptcentre.ie/fairvasc#ComplicationCardiovascular> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents cardiovascular complications that are the related to vasculitis." .
+<http://ontologies.adaptcentre.ie/fairvasc#ComplicationCardiovascular> <http://www.w3.org/2000/01/rdf-schema#label> "Complication Cardiovascular"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#ComplicationCardiovascular> <http://www.w3.org/2000/01/rdf-schema#label> "Complication Cardiovascular" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#ComplicationInfection
+<http://ontologies.adaptcentre.ie/fairvasc#ComplicationInfection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologies.adaptcentre.ie/fairvasc#ComplicationInfection> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontologies.adaptcentre.ie/fairvasc#Complication> .
+<http://ontologies.adaptcentre.ie/fairvasc#ComplicationInfection> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents infections that are the result of complications related to vasculitis." .
+<http://ontologies.adaptcentre.ie/fairvasc#ComplicationInfection> <http://www.w3.org/2000/01/rdf-schema#label> "Complication Infection"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#ComplicationInfection> <http://www.w3.org/2000/01/rdf-schema#label> "Complication Infection" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#ComplicationMalignancy
+<http://ontologies.adaptcentre.ie/fairvasc#ComplicationMalignancy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologies.adaptcentre.ie/fairvasc#ComplicationMalignancy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontologies.adaptcentre.ie/fairvasc#Complication> .
+<http://ontologies.adaptcentre.ie/fairvasc#ComplicationMalignancy> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents malignancies that are the result of complications related to vasculitis." .
+<http://ontologies.adaptcentre.ie/fairvasc#ComplicationMalignancy> <http://www.w3.org/2000/01/rdf-schema#label> "Complication Malignancy"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#ComplicationMalignancy> <http://www.w3.org/2000/01/rdf-schema#label> "Complication Malignancy" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#ComplicationThromboembolism
+<http://ontologies.adaptcentre.ie/fairvasc#ComplicationThromboembolism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologies.adaptcentre.ie/fairvasc#ComplicationThromboembolism> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontologies.adaptcentre.ie/fairvasc#Complication> .
+<http://ontologies.adaptcentre.ie/fairvasc#ComplicationThromboembolism> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents thromboembolism complications that are the related to vasculitis." .
+<http://ontologies.adaptcentre.ie/fairvasc#ComplicationThromboembolism> <http://www.w3.org/2000/01/rdf-schema#label> "Complication Thromboembolism"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#ComplicationThromboembolism> <http://www.w3.org/2000/01/rdf-schema#label> "Complication Thromboembolism" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#Diagnosis
+<http://ontologies.adaptcentre.ie/fairvasc#Diagnosis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologies.adaptcentre.ie/fairvasc#Diagnosis> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents a person's diagnosis of vasculitis and (possibly a small number of) other diseases." .
+<http://ontologies.adaptcentre.ie/fairvasc#Diagnosis> <http://www.w3.org/2000/01/rdf-schema#label> "Diagnosis"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#Diagnosis> <http://www.w3.org/2000/01/rdf-schema#label> "Diagnosis" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#Encounter
+<http://ontologies.adaptcentre.ie/fairvasc#Encounter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologies.adaptcentre.ie/fairvasc#Encounter> <http://www.w3.org/2000/01/rdf-schema#comment> "This class covers all “encounters” the patient has with their medical professionals. Types of encounters include; BVAS, Tests (e.g. blood tests which include all recorded creatinine levels), and a record of each recorded complications over the course of their disease etc." .
+<http://ontologies.adaptcentre.ie/fairvasc#Encounter> <http://www.w3.org/2000/01/rdf-schema#label> "Encounter"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#Encounter> <http://www.w3.org/2000/01/rdf-schema#label> "Encounter" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#OrganPattern
+<http://ontologies.adaptcentre.ie/fairvasc#OrganPattern> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologies.adaptcentre.ie/fairvasc#OrganPattern> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the different organs which have been affected by vasculitis. It is important to note that not every organ system will be affected in every patient. The pattern of organ involvement (and symptoms) is unique to the individual, as well as the type of vasculitis. It is derived either from direct observations, or through the use of BVAS. Organ patterns are mapped to SNOMED-CT codes." .
+<http://ontologies.adaptcentre.ie/fairvasc#OrganPattern> <http://www.w3.org/2000/01/rdf-schema#label> "Organ Pattern"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#OrganPattern> <http://www.w3.org/2000/01/rdf-schema#label> "Organ Pattern" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#Patient
+<http://ontologies.adaptcentre.ie/fairvasc#Patient> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologies.adaptcentre.ie/fairvasc#Patient> <http://www.w3.org/2000/01/rdf-schema#comment> "A patient of a vasculitis registry." .
+<http://ontologies.adaptcentre.ie/fairvasc#Patient> <http://www.w3.org/2000/01/rdf-schema#label> "Patient"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#Patient> <http://www.w3.org/2000/01/rdf-schema#label> "Patient" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#PatientOverview
+<http://ontologies.adaptcentre.ie/fairvasc#PatientOverview> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologies.adaptcentre.ie/fairvasc#PatientOverview> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents an overview of the patient health in relation to vasculitis. The overview consists of the patient’s current diagnosis, their ANCA and also how their organs have been affected over the course of their disease." .
+<http://ontologies.adaptcentre.ie/fairvasc#PatientOverview> <http://www.w3.org/2000/01/rdf-schema#label> "Patient Overview"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#PatientOverview> <http://www.w3.org/2000/01/rdf-schema#label> "Patient Overview" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#ProvenanceActivityQuery
+<http://ontologies.adaptcentre.ie/fairvasc#ProvenanceActivityQuery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologies.adaptcentre.ie/fairvasc#ProvenanceActivityQuery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<http://ontologies.adaptcentre.ie/fairvasc#ProvenanceActivityQuery> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents provenance data related to activity og querying of an RDF graph, for example when a query was made, who made a query and the type of query made." .
+<http://ontologies.adaptcentre.ie/fairvasc#ProvenanceActivityQuery> <http://www.w3.org/2000/01/rdf-schema#label> "Provenenace Activity Query"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#ProvenanceActivityQuery> <http://www.w3.org/2000/01/rdf-schema#label> "Provenenace Activity Query" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#ProvenanceActivityUplift
+<http://ontologies.adaptcentre.ie/fairvasc#ProvenanceActivityUplift> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologies.adaptcentre.ie/fairvasc#ProvenanceActivityUplift> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Activity> .
+<http://ontologies.adaptcentre.ie/fairvasc#ProvenanceActivityUplift> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents provenance data related to the activity of uplifting of tabular data into RDF. It records data such as the name of the file being uplidfted (e.g. a CSV file name), the name of the mapping file (e.g. an R2RML mapping file), the name of the resulting graph generated by this uplift, and the responsible party for conducting the uplift activity." .
+<http://ontologies.adaptcentre.ie/fairvasc#ProvenanceActivityUplift> <http://www.w3.org/2000/01/rdf-schema#label> "Provenenace Activity Uplift"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#ProvenanceActivityUplift> <http://www.w3.org/2000/01/rdf-schema#label> "Provenenace Activity Uplift" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#Treatment
+<http://ontologies.adaptcentre.ie/fairvasc#Treatment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologies.adaptcentre.ie/fairvasc#Treatment> <http://www.w3.org/2000/01/rdf-schema#comment> "This class describes the treatments for AAV. The most important component of treatment is strong medication which suppresses the immune system, which is inappropriately activated in AAV. This immunosuppressive treatment is typically considered as either 'induction' or 'maintenance' therapy."@en .
+<http://ontologies.adaptcentre.ie/fairvasc#Treatment> <http://www.w3.org/2000/01/rdf-schema#label> "Treatment"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#Treatment> <http://www.w3.org/2000/01/rdf-schema#label> "Treatment" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#TreatmentInduction
+<http://ontologies.adaptcentre.ie/fairvasc#TreatmentInduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologies.adaptcentre.ie/fairvasc#TreatmentInduction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontologies.adaptcentre.ie/fairvasc#Treatment> .
+<http://ontologies.adaptcentre.ie/fairvasc#TreatmentInduction> <http://www.w3.org/2000/01/rdf-schema#comment> "Induction therapy is very strong immunosuppression given with the intent of controlling active, potentially life-threatening, AAV. Once disease control is achieved, a transition to maintenance therapy can take place, which typically consists of moderate strength immunosuppressive treatments. Typical induction treatment includes a combination of IV or oral cyclophosphamide, IV rituximab, high-dose IV or oral glucocorticoids and plasma exchange."@en .
+<http://ontologies.adaptcentre.ie/fairvasc#TreatmentInduction> <http://www.w3.org/2000/01/rdf-schema#label> "An induction treatment"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#TreatmentInduction> <http://www.w3.org/2000/01/rdf-schema#label> "An induction treatment" .
+# 
+# http://ontologies.adaptcentre.ie/fairvasc#TreatmentMaintenance
+<http://ontologies.adaptcentre.ie/fairvasc#TreatmentMaintenance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ontologies.adaptcentre.ie/fairvasc#TreatmentMaintenance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ontologies.adaptcentre.ie/fairvasc#Treatment> .
+<http://ontologies.adaptcentre.ie/fairvasc#TreatmentMaintenance> <http://www.w3.org/2000/01/rdf-schema#comment> "Typical maintenance therapy might include azathioprine, low-dose glucocorticoids or intermittent IV rituximab. If a patient suffers a serious relapse, induction treatment may be used again. Overall, treatment usually continues for at least two years."@en .
+<http://ontologies.adaptcentre.ie/fairvasc#TreatmentMaintenance> <http://www.w3.org/2000/01/rdf-schema#label> "A maintenance treatment"@en .
+<http://ontologies.adaptcentre.ie/fairvasc#TreatmentMaintenance> <http://www.w3.org/2000/01/rdf-schema#label> "A maintenance treatment" .
+# 
+# http://www.w3.org/ns/prov#Activity
+<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
