@@ -221,12 +221,14 @@
 <http://ontologies.adaptcentre.ie/fairvasc#ancaSpec> <http://www.w3.org/2000/01/rdf-schema#label> "has ANCA Specificity (ELISA) results" .
 # 
 # http://ontologies.adaptcentre.ie/fairvasc#causeOfDeath
+<http://ontologies.adaptcentre.ie/fairvasc#dateOfDeath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <http://ontologies.adaptcentre.ie/fairvasc#causeOfDeath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://ontologies.adaptcentre.ie/fairvasc#causeOfDeath> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ontologies.adaptcentre.ie/fairvasc#ClinicalOutcomes> .
 <http://ontologies.adaptcentre.ie/fairvasc#causeOfDeath> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://ontologies.adaptcentre.ie/fairvasc#causeOfDeath> <http://www.w3.org/2000/01/rdf-schema#comment> "the main cause of a patients death" .
 <http://ontologies.adaptcentre.ie/fairvasc#causeOfDeath> <http://www.w3.org/2000/01/rdf-schema#label> "cause of death"@en .
 <http://ontologies.adaptcentre.ie/fairvasc#causeOfDeath> <http://www.w3.org/2000/01/rdf-schema#label> "cause of death" .
+<http://ontologies.adaptcentre.ie/fairvasc#dateOfDeath> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://ontologies.adaptcentre.ie/fairvasc#>
 # 
 # http://ontologies.adaptcentre.ie/fairvasc#comorbidity
 <http://ontologies.adaptcentre.ie/fairvasc#comorbidity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
